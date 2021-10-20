@@ -1,0 +1,89 @@
+First (<corpo>) = {begin}
+
+First (<start>) = {begin}
+
+First (<content>) = {int, double, boolean, string, if, First(<char>), repeat}
+
+First (<id>) = {First(<letter>)}
+
+First (<var>) = {int, double, char, string, boolean}
+
+First (<declaration>) = {int, double, char, string, boolean}
+
+First (<commando>) = {if, First(<letter>), repeat, First(<number>)}
+
+First (<allocation>) = {First(<letter>)}
+
+First (<tipo>) = {int, double, char, string, boolean}
+
+First (<operation>) = {First(<letter>), First(<number>)}
+
+First (<comando_if>) = {if}
+
+First (<if>) = {if}
+
+First (<comando_repeat>) = {repeat}
+
+First (<repeat>) = {repeat}
+
+First (<valor>) = {First(<letter>), First(<number>), true, false"}
+
+First (<condition>) = {First(<letter>), true, false, First(<number>)"}
+
+First (<bool_result>) = {First(<letter>), true, false, First(<number>)"}
+
+First (<comparacao) = {==, !=, <, >, >=, <=}
+
+First (<comparacao>) = {First(<letter>), First(<number>), true, false"}
+
+First (<boolean>) = {boolean}
+
+First (<boolean>) = {true, false}
+
+First (<letter>) = {A,a,B,b,C,c,D,d,E,e,F,f,G,g,H,h,I,i,J,j,K,k,L,l,M,m,N,n,O,o,P,p,Q
+                ,q,R,r,S,s,T,t,U,u,V,v,W,w,X,x,Y,y,Z,z}
+
+First (<letter2>) = {'1','2','3','4','5','6','7','8','9',-,_,=,/,
+              +,!,@,$,#,&,*,(,),{,},[,],<,>,,,.,[,],0, }
+
+First (<string>) = {string}
+
+First (<string>) = {"}
+
+First (<integer>) = {int}
+
+First (<int>) = {+, -, First(<number>)}
+
+First (<number>) = {0,1,2,3,4,5,6,7,8,9}
+
+First (<numbers>) = {+, -, First(<number>)}
+
+First (<op>) = {+,-,*,/}
+
+First (<double>) = {double}
+
+First (<double>) = {First(<number>)}
+
+First (<fimcomando>) = {;}
+
+First (<igual>) = {==}
+
+First (<diferente>) = {!=}
+
+First (<maior>) = {>}
+
+First (<menor>) = {<}
+
+First (<maiorigual>) = {>=}
+
+First (<menorigual>) = {<=}
+
+First (<mais>) = {+}
+
+First (<menos>) = {-}
+
+First (<vezes>) = {*}
+
+First (<divizao>) = {/}
+
+First (<atribuicao>) = {=}

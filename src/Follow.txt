@@ -1,0 +1,87 @@
+Follow(<corpo>) = {$}
+
+Follow(<começo>) = {$, '{'}
+
+Follow(<content>) = {$, '}'}
+
+Follow(<id>) = {$, ' ', +, -, *, /, =, ;, First(<letter>), First(<number>)}
+
+Follow(<var>) = {$, ;, ' ', =}
+
+Follow(<declaration>) = {$}
+
+Follow(<command>) = {$, '}'}
+
+Follow(<allocation>) = {$, '}', ' ', First(<letter>), true, false, First(<number>)"}
+
+Follow(<tipo>) = {$, ' ', First(<chars>)}
+
+Follow(<operation>) = {$, '}', ), '{', First(<letter>), First(<number>), true, false, ", ;}
+
+Follow(<comando_repeat>) = {$, '}'}
+
+Follow(<repeat>) = {$, (, ' ', First(<letter>), true, false, First(<number>), "}
+
+Follow(<value>) = {$, ;, ' ', First(<letter>), First(<number>), true, false, "}
+
+Follow(<condition>) = {$, ;, ), ' ', '{'}
+
+Follow(<comando_if>) = {$, '}'}
+
+Follow(<if>) = {$, (, ' ', ), ;, '{'}
+
+Follow(<comp>) = {$, ' ', First(<letter>), First(<number>), true, false, "}
+
+Follow(<compare>) = {$, ), ' ', ;, '{'}
+
+Follow(<boolean>) = {$, ' ', First(<letter>), int, double, boolean, char, string}
+
+Follow(<boolean>) = {$, ;, ' ', First(<letter>), First(<number>), true, false, ", ), '{'}
+
+Follow(<btrue>) = {$, ;, ' ', First(<letter>), First(<number>), true, false, ", ), '{'}
+
+Follow(<bfalse>) = {$, ;, ' ', First(<letter>), First(<number>), true, false, ", ), '{'}
+
+Follow(<letter>) = {$, ' ', +, -, *, /, =, ;, First(<letter>), First(<number>)}
+
+Follow(<letter2>) = {$, "}
+
+Follow(<letters>) = {$, ", First(<letter>)}
+
+Follow(<string>) = {$, ' ', First(<letter>), ;, First(<number>), true, false"}
+
+Follow(<integer>) = {$, First(<letter>)}
+
+Follow(<int>) = {$, ' ', First(<letter>)}
+
+Follow(<number>) = {$, ' ', +, -, *, /, ;, First(<numbers>), '.'}
+
+Follow(<numbers>) = {$, ' ', First(<letter>)}
+
+Follow(<op>) = {$, ' ', First(<letter>), +, -, First(<number>)}
+
+Follow(<double>) = {$, ' ', First(<letter>)}
+
+Follow(<end>) = {$, '}', ' ', First(<letter>), true, false, First(<number>), ", ), '{'}
+
+Follow(<igualdade>) = {$, ' ', First(<letter>), First(<number>), true, false"}
+
+Follow(<diferente>) = {$, ' ', First(<letter>), First(<number>), true, false"}
+
+Follow(<maior>) = {$, ' ', First(<letter>), First(<number>), true, false"}
+
+Follow(<menor>) = {$, ' ', First(<letter>), First(<number>), true, false"}
+
+Follow(<maiorigual>) = {$, ' ', First(<letter>), First(<number>), true, false"}
+
+Follow(<menorigual>) = {$, ' ', First(<letter>), First(<number>), true, false"}
+
+Follow(<mais>) = {$, ' ', First(<letter>), +, -, First(<number>)}
+
+Follow(<menos>) = {$, ' ', First(<letter>), +, -, First(<number>)}
+
+Follow(<vezes>) = {$, ' ', First(<letter>), +, -, First(<number>)}
+
+Follow(<divizao>) = {$, ' ', First(<letter>), +, -, First(<number>)}
+
+Follow(<atribuicao>) = {$, ' ', First(<letter>), First(<number>), true, false"}

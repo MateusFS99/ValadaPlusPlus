@@ -1,0 +1,63 @@
+.primaria {
+    
+    -fx-background-color: #c0c6c8;
+}
+
+.menu-bar {
+    
+    -fx-background-color: #808080;
+}
+
+.menu-bar .label{
+    
+    -fx-text-fill : #ffffff;
+}
+
+.menu .menu-item {
+    
+    -fx-background-color: #808080;
+}
+
+.menu .menu-item:hover{
+    
+    -fx-background-color: #0096C9;
+}
+
+.jfx-button {
+    
+    -fx-background-color: #c0c6c8;
+    -fx-border-color: #fa1e3c;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-border-width: 1;
+}
+
+.text-area {
+    
+    -fx-background-color: #808080;
+    -fx-border-color: #fa1e3c;
+    -fx-border-width: 1;
+    -fx-text-fill : #ffffff;
+}
+
+.text-area .scroll-bar:vertical {    
+    
+    -fx-pref-width: 1;    
+    -fx-opacity: 0;
+}
+
+.tab-header-background{
+    
+    -fx-background-color: #808080;
+}
+
+.jfx-tab-pane .tab-selected-line{
+    
+    -fx-border-color: #fa1e3c;
+}
+
+.tab{
+    
+    -fx-pref-width: 325;
+    -fx-pref-height: 50;
+}
